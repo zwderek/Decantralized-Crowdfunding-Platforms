@@ -1,0 +1,32 @@
+<script>
+  var html = `<img src="sss"/>`;
+  var regex1 = new RegExp(/(img)*^((?!style).)+/,"gmi");
+  console.log(regex1.test(html));
+  const width = 300;
+  const height = 400;
+  // var regex1 = new RegExp(
+  //   "(i?)(<img)(?!(.*?style=['\"](.*)['\"])(.*)([^>]+>))",
+  //   "gmi",
+  // );
+
+  // var regex1 = new RegExp(
+  //   "(i?)(<img)([^/]*)",
+  //   "gmi",
+  // );
+
+  var regex1 = new RegExp(
+    "(i?)(<img)(^((?!style).))([^/]*)",
+    "gmi",
+  );
+  html = html.replace(regex1, '$2 $3 style=""');
+  console.log("html1",html);
+  var regex2 = new RegExp(
+    "(i?)(<img.*?style=['\"])([^>]+>)",
+    "gmi",
+  );
+  html = html.replace(
+    regex2,
+    `$2  width:${width}px;height:${height}px;$3`,
+  );
+  console.log("html2",html);
+</script>

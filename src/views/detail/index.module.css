@@ -1,0 +1,43 @@
+.searchList {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  margin: auto;
+}
+
+.image {
+  width: 100px;
+  height: 150px;
+  border-radius: 10px;
+}
+.listItems {
+  background-color: #fff;
+  margin-top: 20px;
+}
+.listItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #fff;
+  margin-top: 20px;
+}
+
+.title {
+  color: #000;
+  padding: 10px 0px;
+  font-weight: bold;
+}
+.value {
+  color: #7686ff;
+  padding: 10px;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+}
