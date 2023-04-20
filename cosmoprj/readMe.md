@@ -17,6 +17,7 @@ To enter the console:
 
 Then you can directly operate with the Evmos Testnet.
 For expample:
+
 `
 contract = await CampaignFactory.at('0xC2ddBc6138a9150F9ce7409a7099918e90749425')
 await contract.getDeployedCampaigns()
